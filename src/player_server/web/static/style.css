@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#app {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background: #eee;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+#controls button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#trackList {
+    list-style: none;
+    padding: 0;
+}
+
+.track-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.track-item:hover {
+    background-color: #f0f0f0;
+}
+
+.track-item.selected {
+    background-color: #007bff;
+    color: white;
+}

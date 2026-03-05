@@ -1,0 +1,2 @@
+[console_scripts]
+mp3-player-server = player_server.main:run

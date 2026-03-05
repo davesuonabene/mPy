@@ -1,0 +1,27 @@
+[project]
+name = "mp3-player-server"
+version = "0.1.0"
+description = "A lightweight MP3 player server with a web UI and REST API."
+dependencies = [
+    "sqlalchemy",
+    "pydantic-settings",
+    "fastapi",
+    "uvicorn[standard]",
+    "mutagen",
+    "gunicorn",
+    "jinja2",
+    "miniaudio",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"player_server" = ["web/static/*", "web/templates/*"]
+
+[project.scripts]
+mp3-player-server = "player_server.main:run"

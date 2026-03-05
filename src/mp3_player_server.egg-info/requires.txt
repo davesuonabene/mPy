@@ -1,0 +1,8 @@
+sqlalchemy
+pydantic-settings
+fastapi
+uvicorn[standard]
+mutagen
+gunicorn
+jinja2
+python-vlc

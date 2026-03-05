@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: mp3-player-server
+Version: 0.1.0
+Summary: A lightweight MP3 player server with a web UI and REST API.
+License-File: LICENSE
+Requires-Dist: sqlalchemy
+Requires-Dist: pydantic-settings
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: mutagen
+Requires-Dist: gunicorn
+Requires-Dist: jinja2
+Requires-Dist: python-vlc
+Dynamic: license-file
